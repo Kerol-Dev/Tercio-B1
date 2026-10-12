@@ -1,0 +1,49 @@
+pin,port,net,function,af,notes
+1,VBAT,3V3,power,,tie to VDD
+2,PC13,LED_STATUS,GPIO,,low-drive sink <=3 mA
+3,PC14,LED_FAULT,GPIO,,low-drive sink <=3 mA
+4,PC15,CAN_STBY,GPIO,,MCP2562FD STBY (internal pull-up = standby until driven low)
+5,PF0,OSC_IN,HSE,,16 MHz C13738
+6,PF1,OSC_OUT,HSE,,
+7,PG10,NRST,reset,,100 nF to GND; Tag-Connect
+8,PA0,CSA_A,ADC12_IN1,analog,DRV8353 SOA
+9,PA1,CSA_B,ADC12_IN2,analog,DRV8353 SOB
+10,PA2,AUX_ANA,ADC1_IN3,analog,aux pin 7: motor NTC / analog in
+11,PA3,NTC_FET,ADC1_IN4,analog,board NTC near low-side FETs
+12,PA4,ENC_CS,GPIO,,MT6835 CS
+13,PA5,SPI1_SCK,SPI1_SCK,AF5,encoder + DRV8353
+14,PA6,SPI1_MISO,SPI1_MISO,AF5,
+15,PA7,SPI1_MOSI,SPI1_MOSI,AF5,
+16,PB0,VPH_A,ADC1_IN15,analog,optional phase voltage (DNP rev A)
+17,PB1,VPH_B,ADC1_IN12,analog,optional phase voltage (DNP rev A)
+18,PB2,VBUS_SENSE,ADC2_IN12,analog,0-60 V divider
+19,VSSA,GND,power,,
+20,VREF+,VDDA,power,,filtered 3.3 V; also DRV8353 VREF
+21,VDDA,VDDA,power,,ferrite + 1 uF + 10 nF
+22,PB10,DRV_nFAULT,TIM1_BKIN,check DS,open drain + pull-up; hardware PWM shutdown
+23,VSS,GND,power,,
+24,VDD,3V3,power,,
+25,PB11,CSA_C,ADC12_IN14,analog,DRV8353 SOC
+26,PB12,VPH_C,ADC1_IN11,analog,optional phase voltage (DNP rev A)
+27,PB13,INLA,TIM1_CH1N,AF6,
+28,PB14,INLB,TIM1_CH2N,AF6,
+29,PB15,INLC,TIM1_CH3N,AF4,
+30,PA8,INHA,TIM1_CH1,AF6,
+31,PA9,INHB,TIM1_CH2,AF6,
+32,PA10,INHC,TIM1_CH3,AF6,
+33,PA11,CAN_RX,FDCAN1_RX,AF9,same as S1
+34,PA12,CAN_TX,FDCAN1_TX,AF9,same as S1
+35,VSS,GND,power,,
+36,VDD,3V3,power,,
+37,PA13,SWDIO,SWD,AF0,Tag-Connect TC2030
+38,PA14,SWCLK,SWD,AF0,Tag-Connect TC2030
+39,PA15,AUX1,SPI3_NSS / TIM2_CH1 / USART2_RX / I2C1_SCL,AF6 / AF1 / AF7 / AF4,aux pin 2
+40,PB3,AUX2,SPI3_SCK / TIM2_CH2 / USART2_TX,AF6 / AF1 / AF7,aux pin 3 (loses SWO)
+41,PB4,AUX3,SPI3_MISO / TIM3_CH1 / USART2_RX,AF6 / AF2 / AF7,aux pin 4
+42,PB5,AUX4,SPI3_MOSI / TIM3_CH2 / I2C3_SDA,AF6 / AF2 / check DS,aux pin 5
+43,PB6,DRV_CS,GPIO,,DRV8353 CS
+44,PB7,AUX5,I2C1_SDA / USART1_RX / TIM3_CH4,AF4 / AF7 / AF10,aux pin 6
+45,PB8,BOOT0,BOOT0,,10 k pull-down; unused
+46,PB9,DRV_EN,GPIO,,100 k pull-down: driver off in reset
+47,VSS,GND,power,,
+48,VDD,3V3,power,,

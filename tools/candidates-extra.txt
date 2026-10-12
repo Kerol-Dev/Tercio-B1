@@ -1,0 +1,15 @@
+# Supplementary lookups (gaps found in the first pass).
+Connector | BM08B-GHS-TBT
+Connector | SM07B-GHS-TB
+Connector | BM06B-GHS-TBT
+Connector | 1.25mm 8P GH | kw:4
+Dev board | B-G431B-ESC1
+Bulk elec | 47uF 80V SMD | kw:3
+Bulk elec | 100uF 80V SMD | kw:3
+Bulk elec | 33uF 100V SMD | kw:3
+ESD | TPD4E05U06DQAR
+ESD | SRV05-4
+LED | 0603 green LED | kw:2:base
+LED | 0603 red LED | kw:2:base
+MOSFET | BSC070N10NS5
+MOSFET | BSC093N10NS5

@@ -1,0 +1,144 @@
+# Tercio BLDC part shortlist: candidates to evaluate, not decisions.
+# group | query | how   (see parts_lookup.py)
+
+# ---- MCU ----------------------------------------------------------------------
+MCU | STM32G431CBT6
+MCU | STM32G431CBU6
+MCU | STM32G431RBT6
+MCU | STM32G474CET6
+MCU | STM32G474CEU6
+MCU | STM32G474CBT6
+MCU | STM32G474RET6
+MCU | STM32G473CET6
+MCU | STM32G491CET6
+MCU | STM32G491CEU6
+MCU | STM32G491RET6
+
+# ---- Gate drivers ---------------------------------------------------------------
+Gate driver | DRV8323RSRGZR
+Gate driver | DRV8323RHRGZR
+Gate driver | DRV8323SRTAR
+Gate driver | DRV8353RSRGZR
+Gate driver | DRV8353SRTAR
+Gate driver | DRV8353RHRGZR
+Gate driver | DRV8301DCAR
+Gate driver | DRV8320SRHAR
+Gate driver | 6EDL7141
+Gate driver | STDRIVE101
+Gate driver | MP6539
+Gate driver | FD6288Q
+Gate driver | FD6288T
+Gate driver | EG2133
+
+# ---- MOSFETs (60-100 V, 5x6 / TOLL) ---------------------------------------------
+MOSFET | BSC040N08NS5
+MOSFET | BSC026N08NS5
+MOSFET | BSC014N06NS
+MOSFET | BSC030N08NS5
+MOSFET | TPH4R008NH
+MOSFET | TPH2R408QM
+MOSFET | CSD19502Q5B
+MOSFET | CSD19532Q5B
+MOSFET | CSD18540Q5B
+MOSFET | CSD18532Q5B
+MOSFET | NTMFS6H818NL
+MOSFET | NTMFS5C628NL
+MOSFET | NTMFS5C646NL
+MOSFET | NCEP85T14
+MOSFET | NCEP0178AG
+MOSFET | NCEP6080AGU
+MOSFET | NCEP85T25VGU
+MOSFET | NCEP60T20AGU
+MOSFET | SIR680ADP
+MOSFET | AON6276
+MOSFET | IPT020N08N5
+MOSFET | IPT012N08N5
+MOSFET | 80V 5x6 DFN MOSFET | kw:6
+
+# ---- Current sensing --------------------------------------------------------------
+Shunt | 1mΩ 2512 | kw:4
+Shunt | 2mΩ 2512 | kw:4
+Shunt | 1mΩ 2010 | kw:3
+Shunt | 0.5mΩ 2512 | kw:3
+Current amp | INA240A1PWR
+Current amp | INA240A2PWR
+Current amp | INA181A1IDBVR
+Current amp | INA181A2IDBVR
+Current amp | INA186A1IDCKR
+Current amp | TP181A1
+Current amp | INA199A1DCKR
+
+# ---- Encoders ------------------------------------------------------------------------
+Encoder | MT6835GT-STD
+Encoder | MT6835
+Encoder | MT6826S
+Encoder | MT6701QT-STD
+Encoder | MT6701
+Encoder | MT6816CT-ACD
+Encoder | AS5047P-ATST
+Encoder | AS5047U
+Encoder | AS5048A-HTSP
+Encoder | AS5600-ASOM
+Encoder | MA600GQ
+Encoder | MA600AGQ
+Encoder | MA732GQ-Z
+Encoder | MA782GGU
+Encoder | TLE5012BE1000
+
+# ---- CAN-FD transceiver ------------------------------------------------------------
+CAN-FD | MCP2562FDT-E/SN
+CAN-FD | MCP2562FDT-E/MF
+CAN-FD | MCP2562FD-E/SN
+CAN-FD | TCAN1042VDRQ1
+CAN-FD | TCAN1042HGVDRBRQ1
+CAN-FD | TCAN1462VDRQ1
+CAN-FD | TJA1051T/3
+CAN-FD | TJA1462AT
+CAN-FD | SIT1044QT
+CAN-FD | CA-IF1044
+CAN ESD | NUP2105L
+CAN ESD | ESD2CAN24
+CAN ESD | PESD2CAN
+
+# ---- Power: bucks / LDOs -------------------------------------------------------------
+Buck | LMR16006XDDCR
+Buck | LMR16006YDDCR
+Buck | LMR36006
+Buck | LMR38010
+Buck | TPS560430
+Buck | MP4560DN
+Buck | MP9486A
+Buck | SCT2A10
+Buck | TPS54360BDDAR
+LDO | TLV75533PDBVR
+LDO | ME6211C33M5G
+LDO | XC6206P332MR
+LDO | AMS1117-3.3
+LDO | RT9013-33GB
+LDO | TPS7A2033PDBVR
+
+# ---- Protection and bulk capacitance ------------------------------------------------------
+TVS | SMBJ54A
+TVS | SMBJ58A
+TVS | SMCJ51A
+TVS | SMCJ58A
+TVS | SMBJ48A
+Bulk MLCC | 4.7uF 100V 1210 | kw:4
+Bulk MLCC | 2.2uF 100V 1206 | kw:4
+Bulk MLCC | 1uF 100V 0805 | kw:3
+Bulk elec | 100uF 63V SMD | kw:4
+Bulk elec | 47uF 63V SMD | kw:3
+Bulk polymer | 63V polymer hybrid | kw:3
+
+# ---- Sensing / misc --------------------------------------------------------------------------
+NTC | NCP18XH103F03RB
+NTC | CMFB103F3950FANT
+NTC | NCP15XH103F03RC
+Crystal | X322516MLB4SI
+Crystal | 16MHz 3225 | kw:2:base
+Connector | XT30PW-M
+Connector | XT30UPB-M
+Connector | SM04B-GHS-TB
+Connector | BM04B-GHS-TBT
+Connector | SM06B-GHS-TB
+Connector | SM08B-GHS-TB
