@@ -6,7 +6,7 @@ You chose to start the schematic now. These rules keep that from touching the
 S1/FD launch:
 
 1. **No B1 change touches the S1, FD, IMU, web or docs repos before 1 Dec.**
-   Shared code is *copied* into Tercio-bldc; `tercio-common` is extracted
+   Shared code is *copied* into Tercio-B1; `tercio-common` is extracted
    after launch.
 2. **Launch work always preempts B1 work.** If a launch task slips, B1 pauses,
    not the other way round.

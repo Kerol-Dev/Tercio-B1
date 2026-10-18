@@ -1,6 +1,8 @@
 # 7. Firmware plan
 
-Status: plan, 2026-10-12. Nothing here is written yet.
+Status: plan, 2026-10-12. F0 (the FOC core, calibration, the Joint and the host
+simulator with its tests 1–6) is written as of 2026-10-13: see
+[firmware/README.md](../firmware/README.md).
 
 The brushless firmware is the S1 firmware with a different real-time core. The
 protocol, CAN driver, flash store, clock check, trajectory planner, parameter

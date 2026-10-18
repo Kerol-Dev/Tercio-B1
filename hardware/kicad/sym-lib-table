@@ -1,0 +1,4 @@
+(sym_lib_table
+	(version 7)
+	(lib (name "Tercio_B1")(type "KiCad")(uri "${KIPRJMOD}/lib/Tercio_B1.kicad_sym")(options "")(descr "Tercio B1 symbols, generated"))
+)

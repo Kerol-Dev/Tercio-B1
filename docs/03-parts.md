@@ -8,7 +8,7 @@ pieces, with no tax or shipping. Stock moves daily, so **re-run the script
 before every order**:
 
 ```bash
-cd ~/Documents/Projects/Tercio-bldc && python3 -I tools/parts_lookup.py && python3 -I tools/parts_lookup.py tools/candidates-extra.txt
+cd ~/Documents/Projects/Tercio-B1 && python3 -I tools/parts_lookup.py && python3 -I tools/parts_lookup.py tools/candidates-extra.txt
 ```
 
 "JLC stock" is what JLCPCB can place on an assembled board today. "LCSC stock"
@@ -203,9 +203,9 @@ anti-spark connector (XT90-S) on the battery side.
 | ✅ | X322516MLB4SI | C13738 | 3225 | 152708 | 0.093 | 0.074 | 16 MHz, **Basic**, same as S1/FD |
 | ✅ | XT30PW-M30.G.Y | C431092 | THT right angle | 72882 | 0.33 | 0.26 | Power in |
 | ◇ | XT30UPB-M | C428721 | THT vertical | 68489 | 0.26 | 0.25 | If the edge layout prefers vertical |
-| ✅ | SM04B-GHS-TB(LF)(SN) | C189895 | GH-4 side entry | 28981 | 0.30 | 0.27 | CAN in/out ×2 |
-| ★ | BM08B-GHS-TBT(LF)(SN) | C133062 | GH-8 top entry | 1233 | 0.37 | 0.30 | Aux. The side-entry SM08B has 0 JLC stock |
-| ◇ | A1251WR-S-8P-LCP | C225117 | GH-compatible 8P side entry | 17177 | 0.15 | 0.12 | Cost-down / stock fallback; check mating with genuine GH housings |
+| ✅ | SM04B-GHS-TB(LF)(SN) | C189895 | GH-4 right angle | 26931 | 0.30 | 0.27 | CAN in/out ×2 (right angle, decided at layout) |
+| ✅ | SH-SM08B-GHS-TB(LF)(SN) (Shou Han) | C42376901 | GH-compatible 8P right angle | 30593 | 0.08 | 0.07 | Aux. Genuine JST SM08B-GHS-TB had 0 JLC stock on 2026-10-12; same footprint, so the genuine part drops in if JLC stocks it |
+| ◇ | BM08B-GHS-TBT(LF)(SN) | C133062 | GH-8 top entry | 1233 | 0.37 | 0.30 | Vertical alternative (not used) |
 | ★ | TPD4E05U06DQAR | C138714 | USON-10 | 102774 | 0.084 | 0.067 | Aux ESD ×2 |
 | ✅ | KT-0603R and a green 0603 | C2286 / Basic | 0603 | 7.1 M | 0.008 | 0.008 | LEDs |
 | — | B-G431B-ESC1 | not on LCSC | — | — | ~$20 | — | Firmware dev board; buy from ST, Mouser or DigiKey |
@@ -220,7 +220,7 @@ uv tool install easyeda2kicad
 ```
 
 ```bash
-easyeda2kicad --full --lcsc_id=C506246 --output ~/Documents/Projects/Tercio-bldc/hardware/lib/tercio-b1
+easyeda2kicad --full --lcsc_id=C506246 --output ~/Documents/Projects/Tercio-B1/hardware/lib/tercio-b1
 ```
 
 `--full` writes the symbol, the footprint and the 3D model. Rules for using its output:

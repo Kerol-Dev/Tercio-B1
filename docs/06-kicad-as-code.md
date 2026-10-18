@@ -20,7 +20,7 @@ happens in KiCad, and every change goes back into the code.
 ## 6.2 Repository layout (proposed)
 
 ```
-Tercio-bldc/
+Tercio-B1/
   hardware/
     gen/                     Python package: the board as code
       parts.py               part catalogue: symbol, footprint, 3D, LCSC code, JLC rotation offset
